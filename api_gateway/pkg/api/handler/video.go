@@ -30,7 +30,7 @@ func (cr *VideoHandler) Video(c *gin.Context) {
 func (cr *VideoHandler) UploadVideo(c *gin.Context) {
 	file, err := c.FormFile("video")
 	if err != nil {
-		fmt.Println(file)
+		fmt.Println(file, "🔗")
 		c.JSON(http.StatusBadRequest, gin.H{
 			"message": "failed to find the file",
 			"error":   err.Error(),
