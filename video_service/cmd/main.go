@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"video-microservice/pkg/config"
+	"video-microservice/pkg/di"
 )
 
 func main() {
